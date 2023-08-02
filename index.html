@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Pujcovna kol</h1>
+    <!-- ------------------------------------------------------------------------ -->
+    <div>
+      <h3>Zadej druh a pocet kol</h3>
+      <form action="">
+        <div>
+          <input type="checkbox" name="horske" id="kolo1" />
+          <label for="horske">horské 500 Kč/den</label>
+          <input type="number" name="" class="kolo1" />
+          <label for="cisloHorske">počtu vybraných kusů</label>
+        </div>
+        <div>
+          <input type="checkbox" name="detske" id="kolo2" />
+          <label for="detske">dětské 200 Kč/den</label>
+          <input type="number" name="" class="kolo2" />
+          <label for="cisloDetske">počtu vybraných kusů</label>
+        </div>
+        <div>
+          <input type="checkbox" name="silnicni" id="kolo3" />
+          <label for="silnicni">silniční 1 500 Kč/den</label>
+          <input type="number" name="" class="kolo3" />
+          <label for="cisloSilnicni">počtu vybraných kusů</label>
+        </div>
+        <div>
+          <input type="checkbox" name="gravel" id="kolo4" />
+          <label for="gravel">gravel 2 500 Kč/den</label>
+          <input type="number" name="" class="kolo4" />
+          <label for="cisloGravel">počtu vybraných kusů</label>
+        </div>
+      </form>
+    </div>
+    <!-- ------------------------------------------------------------------------ -->
+
+    <div>
+      <h3>Na jak dlouho si kola pujcujete?</h3>
+      <select name="" id="pocetDnu">
+        <option value="5" id="">5 dnu</option>
+        <option value="7" id="">7 dnu</option>
+        <option value="14" id="">14 dnu</option>
+        <option value="30" id="">30 dnu</option>
+      </select>
+    </div>
+    <!-- ------------------------------------------------------------------------ -->
+    <br />
+
+    <!-- ------------------------------------------------------------------------ -->
+    <h3>Cyklonosic</h3>
+    <div>
+      <form action="">
+        <div>
+          <input type="radio" name="sex" id="cyklonosic1" value="1.05" />
+          <label for=""
+            >cyklonosič střešní (+ 5 procent z celkové ceny zápůjčky
+            navíc)</label
+          >
+        </div>
+        <div>
+          <input type="radio" name="sex" id="cyklonosic2" value="1.10" />
+          <label for=""
+            >cyklonosič na tažné zařízení (+ 10 procent z celkové ceny zápůjčky
+            navíc)</label
+          >
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="sex"
+            id="cyklonosic3"
+            value="1"
+            checked="checked"
+          />
+          <label for="">není třeba cyklonosič</label>
+        </div>
+      </form>
+    </div>
+    <!-- -------Tlacitko----------------------------------------------------------------- -->
+    <br />
+
+    <!-- -------Tlacitko----------------------------------------------------------------- -->
+    <h3>Vypocet celkove sumy</h3>
+    <div>
+      <button id="vypocetCeny">celkova ceny zapujcky</button>
+    </div>
+
+    <!-- ------------------------------------------------------------------------ -->
+    <label for="">Vysledna cena</label>
+    <input type="text" name="" id="vypisCeny" />
+
+    <!-- ------------------------------------------------------------------------ -->
+    <br /><br />
+    <!-- ------------------------------------------------------------------------ -->
+
+    <div>
+      <input
+        type="text"
+        name=""
+        id="tvojeCastka"
+        placeholder="vloz mnozstvi korun"
+      />
+    </div>
+    <label for=""> zadej sumu, kterou jste ochotni za zápůjčku zaplatit</label>
+    <h4>Mas na to nebo ne?</h4>
+    <input type="text" name="" id="masNaTo" />
+
+    <!-- ------------------------------------------------------------------------ -->
+    <br /><br />
+    <!-- ------------------------------------------------------------------------ -->
+
+    <div>
+      <label for="">Zadej emailovou adresu</label>
+      <input type="email" name="" id="email" />
+      <button id="odeslat" disabled>odeslat</button>
+    </div>
+
+    <!-- ------------------------------------------------------------------------ -->
+  </body>
+</html>
